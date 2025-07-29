@@ -7,7 +7,8 @@ email:{type:String, required:[true,"Email is required"], unique: true},
 password:{type:String, required:[true,"Password is required"]},
 isApproved:{type:Boolean, default: true},
 role:{type:String,enum:Object.values(ROLE), default:ROLE.USER},
-status:{type:String,enum:Object.values(STATUS), default: STATUS.ACTIVE}
+status:{type:String,enum:Object.values(STATUS), default: STATUS.ACTIVE},
+isDeleted:{type:Boolean, default:false}
 },{
     timestamps: true,
     versionKey: false

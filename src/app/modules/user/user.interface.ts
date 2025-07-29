@@ -10,10 +10,12 @@ export enum STATUS{
 }
 
 export interface IUser{
+    _id ?: string;
     name: string;
     email: string;
     password: string;
     role : ROLE;
     isApproved ?: boolean;
     status : STATUS;
+    isDeleted: boolean
 }
